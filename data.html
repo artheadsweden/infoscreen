@@ -1,0 +1,323 @@
+<!DOCTYPE html><html class=""><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Language" content="sv">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Geabkollen</title>
+
+	<script>
+        document.documentElement.className = document.documentElement.className.replace("no-js","js");
+        function hasTouch() {
+			return (('ontouchstart' in window) ||      // html5 browsers
+            	(navigator.maxTouchPoints > 0) ||      // future IE
+				(navigator.msMaxTouchPoints > 0));     // current IE10
+		}
+		if (hasTouch()) {
+			document.documentElement.className = document.documentElement.className + ' touch';
+        }
+    </script>
+
+    <script src="https://gotlandsenergi.se/badapp/script/jquery.min.js?a=1650515150" type="text/javascript"></script>    <script src="https://gotlandsenergi.se/badapp/script/site.js?a=1653359948" type="text/javascript"></script>	
+	<link href="https://gotlandsenergi.se/badapp/css/my-sanitize.min.css?a=1650515150" rel="stylesheet" type="text/css">	<link href="https://gotlandsenergi.se/badapp/css/style-iframe.css?a=1653359948" rel="stylesheet" type="text/css">	</head>
+
+<body class="page-home">
+
+<noscript>
+	<p style="text-align:center">Sidan behöver javascript för att fungera</p>
+</noscript>
+<div class="map-holder">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2032.1 1510.19" id="buoy-map">
+		<defs>
+			<linearGradient id="a" x1="293.33" x2="293.33" y1="448.54" y2="335.07" gradientTransform="translate(-246 -333.36)" gradientUnits="userSpaceOnUse">
+				<stop stop-color="#d3daf0" offset=".29"></stop>
+				<stop stop-color="#0c65af" offset="1"></stop>
+			</linearGradient>
+			<filter id="filter1133" x="-1" y="-5" width="20" height="20" color-interpolation-filters="sRGB">
+				<feFlood flood-color="#000" flood-opacity=".498" result="flood"></feFlood>
+				<feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"></feComposite>
+				<feGaussianBlur result="blur" stdDeviation="8"></feGaussianBlur>
+				<feOffset result="offset"></feOffset>
+				<feComposite in="SourceGraphic" in2="offset" result="composite2"></feComposite>
+			</filter>
+			<style>
+				.b {
+					fill: #fff
+				}
+			</style>
+			<symbol id="svg-buoy">
+				<path class="b" d="M47.33 23.37c-21.493.004-32.256 25.99-17.06 41.19a11.38 11.38 0 00-.07 1.31v64c.011 6.739 5.471 12.199 12.21 12.21h9.83c6.741-.006 12.204-5.469 12.21-12.21v-64c0-.44 0-.88-.06-1.31 15.196-15.2 4.433-41.186-17.06-41.19z" filter="url(#filter1133)" style="isolation:isolate"></path>
+				<circle class="b" cx="47.33" cy="47.5" r="16.33"></circle>
+				<rect class="b" x="38" y="61.45" width="18.66" height="72.89" rx="5.67"></rect>
+				<path d="M42.41 138.23a8.32 8.32 0 01-8.31-8.31v-64a8.2 8.2 0 01.45-2.71 20 20 0 01-7.45-15.67 20.23 20.23 0 1133 15.67 8.46 8.46 0 01.45 2.71v64a8.32 8.32 0 01-8.32 8.31z" fill="url(#a)"></path>
+				<path class="b" d="M47.33 31.16a16.32 16.32 0 017.23 31 4.41 4.41 0 012.1 3.75v64a4.43 4.43 0 01-4.42 4.42h-9.83a4.43 4.43 0 01-4.42-4.42v-64a4.43 4.43 0 012.1-3.75 16.33 16.33 0 017.24-31m0-7.79a24.13 24.13 0 00-17.06 41.19 11.38 11.38 0 00-.07 1.31v64a12.23 12.23 0 0012.21 12.21h9.83a12.22 12.22 0 0012.21-12.21v-64c0-.44 0-.88-.06-1.31a24.13 24.13 0 00-17.06-41.19z"></path>
+				<path fill="#e30613" d="M43.18 82.49h8.3v46.66h-8.3z"></path>
+				<path d="M47.33 31.57A16.23 16.23 0 0031.1 47.8h32.45a16.23 16.23 0 00-16.22-16.23z" fill="#ffda0f"></path>
+				<path d="M47.33 64.02A16.23 16.23 0 0131.1 47.8h32.45a16.22 16.22 0 01-16.22 16.22z" fill="#2a71b8"></path>
+			</symbol>
+			<symbol id="logo">
+				<g fill="#4E4B48">
+					<path d="M43.5 64.8c-.7-.3-1.2-.8-1.6-1.5-.4-.7-.6-1.5-.6-2.5s.2-1.8.6-2.5c.4-.7.9-1.2 1.6-1.5.7-.3 1.5-.5 2.4-.5.8 0 1.4.1 2 .3.6.2 1 .5 1.4 1 .4.4.6.9.7 1.4h-1.6c-.1-.4-.4-.7-.8-1-.4-.3-1-.4-1.7-.4-.9 0-1.6.3-2.2.8-.5.5-.8 1.3-.8 2.4 0 1.1.3 1.9.8 2.4s1.3.8 2.2.8c.8 0 1.4-.2 1.9-.6.5-.4.7-1 .7-1.9v-.1h-3.1v-1.2h4.7v.9c0 1.4-.4 2.5-1.2 3.2-.8.7-1.8 1.1-3.1 1.1-.8-.1-1.6-.2-2.3-.6zM52.8 64.9c-.5-.2-.9-.6-1.3-1.1-.3-.5-.5-1.1-.5-1.8s.2-1.3.5-1.8.7-.9 1.3-1.1c.5-.2 1.1-.4 1.8-.4s1.3.1 1.8.4c.5.2 1 .6 1.3 1.1.3.5.5 1.1.5 1.8s-.2 1.3-.5 1.8-.7.9-1.3 1.1c-.5.2-1.1.4-1.8.4-.6 0-1.2-.1-1.8-.4zm3.3-1.3c.3-.4.5-.9.5-1.6 0-.7-.2-1.2-.5-1.6s-.8-.5-1.4-.5c-.6 0-1.1.2-1.4.5-.3.3-.5.9-.5 1.6 0 .7.2 1.2.5 1.6.3.3.8.5 1.4.5.6 0 1.1-.2 1.4-.5zM60.2 64.7c-.4-.4-.6-.9-.6-1.6v-3h-.9v-1.2h.9v-1.8h1.5v1.8h1.8v1.2h-1.8v2.7c0 .4.1.8.3 1 .2.2.5.3.9.3h.5v1.1c-.3.1-.6.1-1 .1-.7-.1-1.2-.2-1.6-.6zM64.1 56.5h1.5v8.7h-1.5v-8.7zM67.2 64.8c-.4-.3-.6-.8-.6-1.4 0-.4.1-.8.4-1.1.3-.3.8-.5 1.6-.7l2.1-.5c.2 0 .3-.1.4-.2.1-.1.1-.2.1-.3 0-.2-.1-.4-.3-.6-.2-.2-.6-.2-1.1-.2-1 0-1.5.3-1.5 1H67c0-.4.1-.7.3-1s.5-.6 1-.8c.4-.2 1-.3 1.7-.3 1.8 0 2.8.7 2.8 2.1v4.3h-1.3v-.9c-.2.3-.6.5-1 .7-.4.2-.9.3-1.5.3-.8.1-1.4-.1-1.8-.4zm3.1-.8c.3-.1.5-.3.7-.6.2-.2.3-.5.3-.8v-.8c-.1.1-.3.1-.6.2l-1.5.4c-.4.1-.7.2-.9.4-.2.1-.3.3-.3.6s.1.5.3.6c.2.2.5.2.9.2.5 0 .8 0 1.1-.2zM74.1 58.9h1.4v.9c.3-.3.6-.6.9-.8.4-.2.8-.3 1.4-.3.9 0 1.5.2 2 .7.4.4.7 1.1.7 2v3.8H79v-3.4c0-1.2-.5-1.8-1.5-1.8-.6 0-1 .2-1.4.5-.3.3-.5.8-.5 1.4v3.2h-1.5v-6.2zM83.2 64.9c-.5-.3-.9-.6-1.1-1.1-.3-.5-.4-1.1-.4-1.8s.1-1.3.4-1.8c.3-.5.6-.9 1.1-1.1.5-.3 1-.4 1.7-.4.9 0 1.7.3 2.2.9v-3.1h1.5v8.7h-1.5v-.8c-.6.6-1.3 1-2.3 1-.6-.1-1.1-.2-1.6-.5zm3-1.1c.3-.2.6-.4.7-.7.2-.3.3-.7.3-1.1 0-.4-.1-.8-.3-1.1-.2-.3-.4-.6-.7-.7-.3-.2-.7-.3-1.1-.3-.6 0-1 .2-1.4.6-.3.4-.5.9-.5 1.5 0 .7.2 1.2.5 1.5.3.4.8.6 1.4.6.4 0 .8-.1 1.1-.3zM91.1 65c-.5-.2-.8-.4-1.1-.8-.2-.3-.3-.7-.3-1.1h1.5c0 .2.1.3.2.5s.3.3.6.4c.3.1.6.2 1 .2.5 0 .9-.1 1.1-.2.3-.2.4-.4.4-.6 0-.2-.1-.4-.2-.5l-.6-.3c-.2-.1-.6-.1-1-.2-.1 0-.2 0-.5-.1s-.5-.1-.7-.2c-.5-.1-.8-.3-1.1-.6-.3-.2-.4-.6-.4-1 0-.6.3-1 .8-1.4.5-.3 1.2-.5 2.1-.5 1 0 1.7.2 2.2.6.5.4.7.9.7 1.5h-1.4c0-.3-.2-.6-.4-.7-.3-.2-.7-.3-1.2-.3-.4 0-.7.1-1 .2-.2.1-.3.3-.3.5s.1.3.2.4c.1.1.3.2.6.3.2.1.5.1.9.2.6.1 1.1.2 1.4.3.4.2.8.4 1 .6s.4.6.4 1c0 .6-.3 1.1-.8 1.5-.5.4-1.3.5-2.3.5-.7.1-1.3 0-1.8-.2zM107.3 63.9v1.3H101v-8.7h6.1v1.3h-4.5v2.1h4v1.3h-4V64h4.7zM108.7 58.9h1.4v.9c.3-.3.6-.6.9-.8.4-.2.8-.3 1.4-.3.9 0 1.5.2 2 .7.4.4.7 1.1.7 2v3.8h-1.5v-3.4c0-1.2-.5-1.8-1.5-1.8-.6 0-1 .2-1.4.5-.3.3-.5.8-.5 1.4v3.2h-1.5v-6.2zM123.1 62.4h-5.3c.1.6.3 1.1.6 1.4.4.3.8.5 1.4.5.5 0 .8-.1 1.1-.3.3-.2.5-.4.6-.7h1.5c-.1.6-.5 1.1-1 1.5-.5.4-1.3.6-2.1.6-.7 0-1.3-.1-1.9-.4-.5-.3-.9-.6-1.2-1.1-.3-.5-.4-1.1-.4-1.7 0-.7.1-1.3.4-1.8.3-.5.7-.9 1.2-1.2.5-.3 1.2-.4 1.9-.4 1 0 1.8.3 2.4.9.6.6.9 1.4.9 2.4v.3zm-1.5-1c0-.5-.2-.9-.5-1.2-.3-.3-.8-.4-1.3-.4s-1 .1-1.3.4c-.3.3-.5.7-.6 1.2h3.7zM124.5 58.9h1.4v1c.2-.4.5-.6.8-.8.3-.2.8-.3 1.3-.3h.4v1.4h-.6c-.6 0-1.1.1-1.4.4-.3.3-.4.8-.4 1.5v3.1h-1.5v-6.3zM130.7 67.5c-.5-.2-.8-.5-1-.8-.2-.3-.4-.7-.4-1.1h1.5c0 .3.2.5.5.7.3.2.7.3 1.3.3.6 0 1.1-.1 1.3-.4.3-.3.4-.7.4-1.3v-.8c-.6.6-1.3.9-2.2.9-.6 0-1.2-.1-1.6-.4-.5-.2-.8-.6-1.1-1.1-.3-.5-.4-1-.4-1.7s.1-1.2.4-1.7c.3-.5.6-.8 1.1-1.1.5-.2 1-.4 1.6-.4.5 0 .9.1 1.3.2.4.2.7.4 1 .7v-.7h1.5V65c0 .9-.3 1.6-.9 2.1s-1.4.7-2.5.7c-.8 0-1.4-.1-1.8-.3zm3.1-4.2c.4-.4.5-.8.5-1.4 0-.6-.2-1.1-.5-1.4-.4-.4-.8-.6-1.4-.6-.6 0-1 .2-1.3.5-.3.4-.5.8-.5 1.5 0 .6.2 1.1.5 1.5.3.4.8.5 1.3.5.6 0 1.1-.2 1.4-.6zM137.4 57.7c-.2-.1-.2-.3-.2-.6s.1-.4.2-.6c.2-.1.4-.2.6-.2.3 0 .5.1.6.2.2.1.2.3.2.6s-.1.4-.2.6-.4.2-.6.2c-.2 0-.4-.1-.6-.2zm-.1 1.2h1.5v6.3h-1.5v-6.3z"></path>
+					<g>
+						<path d="M10.5 46.5c-2.8-1.3-5-3.2-6.5-5.9C2.4 38 1.7 34.8 1.7 31s.8-7.1 2.3-9.7c1.6-2.6 3.7-4.6 6.5-5.9 2.8-1.3 6-1.9 9.7-1.9 3.2 0 6.1.5 8.4 1.5 2.4 1 4.2 2.3 5.6 4 1.3 1.7 2.2 3.5 2.5 5.6h-8.8c-.5-.9-1.3-1.8-2.4-2.6-1.1-.8-2.8-1.2-5.2-1.2-2.9 0-5.2.8-6.8 2.4-1.7 1.6-2.5 4.2-2.5 7.7s.8 6.1 2.5 7.8c1.7 1.6 3.9 2.5 6.7 2.5 2.4 0 4.3-.6 5.7-1.7 1.4-1.1 2.1-2.8 2.1-5v-.1h-9.2v-6.5H37v3.9c0 5.9-1.5 10.1-4.5 12.8s-7.1 4-12.2 4c-3.8-.2-7-.8-9.8-2.1zM67.1 40.7v7H41.8V14.2h24.7v7H50.6v5.4h14.1v6.7H50.6v7.4h16.5zM94.3 41.6H80.7l-2.3 6.1h-8.8l13-33.5h10.1l12.8 33.5h-9.1l-2.1-6.1zm-2.5-6.8l-4.2-11.7-4.4 11.7h8.6zM140.2 38.3c0 3.1-1.1 5.4-3.4 7s-5.6 2.4-9.9 2.4h-18.2V14.2H127c4 0 7.1.8 9.1 2.3 2.1 1.5 3.1 3.8 3.1 6.8 0 3.3-1.2 5.7-3.7 7.2 3.1 1.5 4.7 4.1 4.7 7.8zm-22.7-17.4v6.2h8.5c2.7 0 4.1-1 4.1-3.1 0-2-1.4-3.1-4.1-3.1h-8.5zm13.3 16.4c0-2.4-1.5-3.7-4.5-3.7h-8.9V41h8.9c3.1 0 4.5-1.3 4.5-3.7z"></path>
+					</g>
+				</g>
+				<path fill="#FFD900" d="M186 1.7c-16.2 0-29.3 13.1-29.3 29.3h58.6c0-16.2-13.1-29.3-29.3-29.3z"></path>
+				<path fill="#1F72B5" d="M186 60.3c-16.2 0-29.3-13.1-29.3-29.3h58.6c0 16.1-13.1 29.3-29.3 29.3z"></path>
+			</symbol>
+			<symbol id="cloud">
+				<path d="M 47.319573,60.271601 61.502,60.271 c 0,0 1.74453,-40.180017 38.498,-40.180017 36.75348,0 38.49775,40.180618 38.49775,40.180618 h 24.18267 c 20.85234,0 37.6396,15.620755 37.6396,35.024113 0,19.403376 -16.78726,35.024086 -37.6396,35.024126 l -115.360847,1.9e-4 c -20.852333,3e-5 -37.6395901,-15.62094 -37.6395901,-35.024316 0,-19.403358 16.7872571,-35.023229 37.6395901,-35.024113 z" fill="none" stroke="#000" stroke-width="20"></path>
+			</symbol>
+			<symbol id="wave">
+				<path d="m10 130c78.619 8.3155 37.741-102.2 147.99-109.59-64.557 103.36 20.083 113.37 42.006 109.59" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></path>
+			</symbol>
+			<symbol id="tempeture-plate">
+				<rect x="0" y="0" rx="10" ry="" width="140.000000" height="50.000000" fill="#fff" opacity="0.7"></rect>				<use xlink:href="#wave" transform="translate(24.500000,5.000000),scale(0.100000)"></use>				<use xlink:href="#cloud" transform="translate(94.500000,5.000000),scale(0.100000)"></use>			</symbol>
+		</defs>
+		<image href="https://gotlandsenergi.se/badapp/img/karta.svg?a=1653360346" width="2032.1" height="1445.19" preserveAspectRatio="xMinYMin" x="0" y="0" transform="translate(0,65)"></image>
+		<a href="https://gotlandsenergi.se/geabkollen" pointer-events="bounding-box">
+			<use pointer-events="bounding-box" xlink:href="#logo" transform="scale(2)"></use>
+		</a>
+		<text class="map-info-text" x="1285" y="1200" font-size="24px">Följ Gotlands badtemperatur i realtid.</text>
+		<text class="map-info-text" x="1285" y="1224" font-size="24px">Geabkollen i samarbete med:</text>
+		<a target="_blank" href="http://eniki.se">
+			<image x="1240" y="1230" width="372" height="214" href="https://gotlandsenergi.se/badapp/img/enikilogo.png"></image>
+		</a>
+		<a target="_blank" href="https://svenskalivraddningssallskapet.se">
+			<image x="1640" y="1235" width="372" height="214" href="https://gotlandsenergi.se/badapp/img/slslogo.png"></image>
+		</a>
+					<rect class="bigger-touch-click" fill="none" stroke="none" width="135" height="125" x="250" y="1157" data-buoy-id="1"></rect>
+			<g class="buoy-marker" data-buoy-id="1" transform="translate(270,1135)">
+				<use xlink:href="#svg-buoy"></use>
+				<use class="temp-plate" xlink:href="#tempeture-plate" x="82.000000" y="58.000000"></use>
+				<g word-spacing="0" letter-spacing="0" text-align="center" stroke="none" fill="#000" font-weight="bold" font-size="20.000000px">
+										<text text-anchor="end" x="142.000000" y="80.000000" dy="20.000000">19,8°</text>					<text text-anchor="middle" x="152.000000" y="80.000000" dy="20.000000">/</text>					<text text-anchor="start" x="162.000000" y="80.000000" dy="20.000000">18,8°</text>				</g>
+			</g>
+					<rect class="bigger-touch-click" fill="none" stroke="none" width="135" height="125" x="1740" y="77" data-buoy-id="12"></rect>
+			<g class="buoy-marker" data-buoy-id="12" transform="translate(1760,55)">
+				<use xlink:href="#svg-buoy"></use>
+				<use class="temp-plate" xlink:href="#tempeture-plate" x="-22.500000" y="-37.000000"></use>
+				<g word-spacing="0" letter-spacing="0" text-align="center" stroke="none" fill="#000" font-weight="bold" font-size="20.000000px">
+										<text text-anchor="end" x="37.500000" y="-15.000000" dy="20.000000">16,3°</text>					<text text-anchor="middle" x="47.500000" y="-15.000000" dy="20.000000">/</text>					<text text-anchor="start" x="57.500000" y="-15.000000" dy="20.000000">17,7°</text>				</g>
+			</g>
+					<rect class="bigger-touch-click" fill="none" stroke="none" width="135" height="125" x="630" y="1087" data-buoy-id="6"></rect>
+			<g class="buoy-marker" data-buoy-id="6" transform="translate(650,1065)">
+				<use xlink:href="#svg-buoy"></use>
+				<use class="temp-plate" xlink:href="#tempeture-plate" x="-22.500000" y="-37.000000"></use>
+				<g word-spacing="0" letter-spacing="0" text-align="center" stroke="none" fill="#000" font-weight="bold" font-size="20.000000px">
+										<text text-anchor="end" x="37.500000" y="-15.000000" dy="20.000000">-°</text>					<text text-anchor="middle" x="47.500000" y="-15.000000" dy="20.000000">/</text>					<text text-anchor="start" x="57.500000" y="-15.000000" dy="20.000000">-°</text>				</g>
+			</g>
+					<rect class="bigger-touch-click" fill="none" stroke="none" width="135" height="125" x="170" y="1367" data-buoy-id="13"></rect>
+			<g class="buoy-marker" data-buoy-id="13" transform="translate(190,1345)">
+				<use xlink:href="#svg-buoy"></use>
+				<use class="temp-plate" xlink:href="#tempeture-plate" x="82.000000" y="58.000000"></use>
+				<g word-spacing="0" letter-spacing="0" text-align="center" stroke="none" fill="#000" font-weight="bold" font-size="20.000000px">
+										<text text-anchor="end" x="142.000000" y="80.000000" dy="20.000000">11,8°</text>					<text text-anchor="middle" x="152.000000" y="80.000000" dy="20.000000">/</text>					<text text-anchor="start" x="162.000000" y="80.000000" dy="20.000000">17,2°</text>				</g>
+			</g>
+					<rect class="bigger-touch-click" fill="none" stroke="none" width="135" height="125" x="1035" y="87" data-buoy-id="9"></rect>
+			<g class="buoy-marker" data-buoy-id="9" transform="translate(1055,65)">
+				<use xlink:href="#svg-buoy"></use>
+				<use class="temp-plate" xlink:href="#tempeture-plate" x="-22.500000" y="-37.000000"></use>
+				<g word-spacing="0" letter-spacing="0" text-align="center" stroke="none" fill="#000" font-weight="bold" font-size="20.000000px">
+										<text text-anchor="end" x="37.500000" y="-15.000000" dy="20.000000">-°</text>					<text text-anchor="middle" x="47.500000" y="-15.000000" dy="20.000000">/</text>					<text text-anchor="start" x="57.500000" y="-15.000000" dy="20.000000">-°</text>				</g>
+			</g>
+					<rect class="bigger-touch-click" fill="none" stroke="none" width="135" height="125" x="580" y="302" data-buoy-id="3"></rect>
+			<g class="buoy-marker" data-buoy-id="3" transform="translate(600,280)">
+				<use xlink:href="#svg-buoy"></use>
+				<use class="temp-plate" xlink:href="#tempeture-plate" x="-22.500000" y="-37.000000"></use>
+				<g word-spacing="0" letter-spacing="0" text-align="center" stroke="none" fill="#000" font-weight="bold" font-size="20.000000px">
+										<text text-anchor="end" x="37.500000" y="-15.000000" dy="20.000000">17,6°</text>					<text text-anchor="middle" x="47.500000" y="-15.000000" dy="20.000000">/</text>					<text text-anchor="start" x="57.500000" y="-15.000000" dy="20.000000">17,0°</text>				</g>
+			</g>
+					<rect class="bigger-touch-click" fill="none" stroke="none" width="135" height="125" x="825" y="937" data-buoy-id="11"></rect>
+			<g class="buoy-marker" data-buoy-id="11" transform="translate(845,915)">
+				<use xlink:href="#svg-buoy"></use>
+				<use class="temp-plate" xlink:href="#tempeture-plate" x="-22.500000" y="-37.000000"></use>
+				<g word-spacing="0" letter-spacing="0" text-align="center" stroke="none" fill="#000" font-weight="bold" font-size="20.000000px">
+										<text text-anchor="end" x="37.500000" y="-15.000000" dy="20.000000">15,6°</text>					<text text-anchor="middle" x="47.500000" y="-15.000000" dy="20.000000">/</text>					<text text-anchor="start" x="57.500000" y="-15.000000" dy="20.000000">18,4°</text>				</g>
+			</g>
+					<rect class="bigger-touch-click" fill="none" stroke="none" width="135" height="125" x="230" y="987" data-buoy-id="10"></rect>
+			<g class="buoy-marker" data-buoy-id="10" transform="translate(250,965)">
+				<use xlink:href="#svg-buoy"></use>
+				<use class="temp-plate" xlink:href="#tempeture-plate" x="-22.500000" y="-37.000000"></use>
+				<g word-spacing="0" letter-spacing="0" text-align="center" stroke="none" fill="#000" font-weight="bold" font-size="20.000000px">
+										<text text-anchor="end" x="37.500000" y="-15.000000" dy="20.000000">21,4°</text>					<text text-anchor="middle" x="47.500000" y="-15.000000" dy="20.000000">/</text>					<text text-anchor="start" x="57.500000" y="-15.000000" dy="20.000000">19,3°</text>				</g>
+			</g>
+					<rect class="bigger-touch-click" fill="none" stroke="none" width="135" height="125" x="980" y="897" data-buoy-id="7"></rect>
+			<g class="buoy-marker" data-buoy-id="7" transform="translate(1000,875)">
+				<use xlink:href="#svg-buoy"></use>
+				<use class="temp-plate" xlink:href="#tempeture-plate" x="82.000000" y="16.428932"></use>
+				<g word-spacing="0" letter-spacing="0" text-align="center" stroke="none" fill="#000" font-weight="bold" font-size="20.000000px">
+										<text text-anchor="end" x="142.000000" y="38.428932" dy="20.000000">16,6°</text>					<text text-anchor="middle" x="152.000000" y="38.428932" dy="20.000000">/</text>					<text text-anchor="start" x="162.000000" y="38.428932" dy="20.000000">19,0°</text>				</g>
+			</g>
+					<rect class="bigger-touch-click" fill="none" stroke="none" width="135" height="125" x="1180" y="387" data-buoy-id="8"></rect>
+			<g class="buoy-marker" data-buoy-id="8" transform="translate(1200,365)">
+				<use xlink:href="#svg-buoy"></use>
+				<use class="temp-plate" xlink:href="#tempeture-plate" x="82.000000" y="58.000000"></use>
+				<g word-spacing="0" letter-spacing="0" text-align="center" stroke="none" fill="#000" font-weight="bold" font-size="20.000000px">
+										<text text-anchor="end" x="142.000000" y="80.000000" dy="20.000000">15,0°</text>					<text text-anchor="middle" x="152.000000" y="80.000000" dy="20.000000">/</text>					<text text-anchor="start" x="162.000000" y="80.000000" dy="20.000000">19,8°</text>				</g>
+			</g>
+					<rect class="bigger-touch-click" fill="none" stroke="none" width="135" height="125" x="1680" y="157" data-buoy-id="5"></rect>
+			<g class="buoy-marker" data-buoy-id="5" transform="translate(1700,135)">
+				<use xlink:href="#svg-buoy"></use>
+				<use class="temp-plate" xlink:href="#tempeture-plate" x="82.000000" y="99.571068"></use>
+				<g word-spacing="0" letter-spacing="0" text-align="center" stroke="none" fill="#000" font-weight="bold" font-size="20.000000px">
+										<text text-anchor="end" x="142.000000" y="121.571068" dy="20.000000">14,9°</text>					<text text-anchor="middle" x="152.000000" y="121.571068" dy="20.000000">/</text>					<text text-anchor="start" x="162.000000" y="121.571068" dy="20.000000">19,2°</text>				</g>
+			</g>
+					<rect class="bigger-touch-click" fill="none" stroke="none" width="135" height="125" x="335" y="522" data-buoy-id="2"></rect>
+			<g class="buoy-marker" data-buoy-id="2" transform="translate(355,500)">
+				<use xlink:href="#svg-buoy"></use>
+				<use class="temp-plate" xlink:href="#tempeture-plate" x="-22.500000" y="-37.000000"></use>
+				<g word-spacing="0" letter-spacing="0" text-align="center" stroke="none" fill="#000" font-weight="bold" font-size="20.000000px">
+										<text text-anchor="end" x="37.500000" y="-15.000000" dy="20.000000">-°</text>					<text text-anchor="middle" x="47.500000" y="-15.000000" dy="20.000000">/</text>					<text text-anchor="start" x="57.500000" y="-15.000000" dy="20.000000">-°</text>				</g>
+			</g>
+					<rect class="bigger-touch-click" fill="none" stroke="none" width="135" height="125" x="1120" y="522" data-buoy-id="4"></rect>
+			<g class="buoy-marker" data-buoy-id="4" transform="translate(1140,500)">
+				<use xlink:href="#svg-buoy"></use>
+				<use class="temp-plate" xlink:href="#tempeture-plate" x="-22.500000" y="153.000000"></use>
+				<g word-spacing="0" letter-spacing="0" text-align="center" stroke="none" fill="#000" font-weight="bold" font-size="20.000000px">
+										<text text-anchor="end" x="37.500000" y="175.000000" dy="20.000000">14,2°</text>					<text text-anchor="middle" x="47.500000" y="175.000000" dy="20.000000">/</text>					<text text-anchor="start" x="57.500000" y="175.000000" dy="20.000000">19,3°</text>				</g>
+			</g>
+			</svg>
+	<div class="buoy-info start hide" data-no-measurments="Inga mätningar registrerade under de 7 senaste timmarna">
+		<input type="hidden" name="csrf_geabkollen" value="aa5541601b31a8faa86c364dfbfe08de">			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 575 510 170" id="diagram">
+		<defs>
+			<marker id="water-dot" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5">
+				<circle cx="5" cy="5" r="5" fill="red"></circle>
+			</marker>
+			<marker id="air-dot" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5">
+				<circle cx="5" cy="5" r="5" fill="blue"></circle>
+			</marker>
+			<clipPath id="clip-path-x">
+				<rect x="45" y="710" width="420" height="40"></rect>
+			</clipPath>
+			<clipPath id="clip-path-water-temp">
+				<rect x="5" y="590" width="40" height="120"></rect>
+			</clipPath>
+			<clipPath id="clip-path-air-temp">
+				<rect x="465" y="590" width="40" height="120"></rect>
+			</clipPath>
+			<clipPath id="clip-path-water-graf">
+				<rect x="45" y="592" width="420" height="120"></rect>
+			</clipPath>
+			<clipPath id="clip-path-air-graf">
+				<rect x="45" y="592" width="420" height="120"></rect>
+			</clipPath>
+			<symbol id="plate-cloud">
+				<path d="M 47.319573,60.271601 61.502,60.271 c 0,0 1.74453,-40.180017 38.498,-40.180017 36.75348,0 38.49775,40.180618 38.49775,40.180618 h 24.18267 c 20.85234,0 37.6396,15.620755 37.6396,35.024113 0,19.403376 -16.78726,35.024086 -37.6396,35.024126 l -115.360847,1.9e-4 c -20.852333,3e-5 -37.6395901,-15.62094 -37.6395901,-35.024316 0,-19.403358 16.7872571,-35.023229 37.6395901,-35.024113 z" fill="none" stroke-width="20"></path>
+			</symbol>
+			<symbol id="plate-wave">
+				<path d="m10 130c78.619 8.3155 37.741-102.2 147.99-109.59-64.557 103.36 20.083 113.37 42.006 109.59" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></path>
+			</symbol>
+		</defs>
+		<g id="water-temp-axel" clip-path="url(#clip-path-water-temp)">
+			<g stroke="#000" stroke-width="2"><line x1="40" x2="45" y1="702" y2="702"></line><line x1="40" x2="45" y1="682" y2="682"></line><line x1="40" x2="45" y1="662" y2="662"></line><line x1="40" x2="45" y1="642" y2="642"></line><line x1="40" x2="45" y1="622" y2="622"></line><line x1="40" x2="45" y1="602" y2="602"></line><line x1="40" x2="45" y1="582" y2="582"></line><line x1="40" x2="45" y1="562" y2="562"></line><line x1="40" x2="45" y1="542" y2="542"></line><line x1="40" x2="45" y1="522" y2="522"></line><line x1="40" x2="45" y1="502" y2="502"></line><line x1="40" x2="45" y1="482" y2="482"></line><line x1="40" x2="45" y1="462" y2="462"></line><line x1="40" x2="45" y1="442" y2="442"></line><line x1="40" x2="45" y1="422" y2="422"></line><line x1="40" x2="45" y1="402" y2="402"></line><line x1="40" x2="45" y1="382" y2="382"></line><line x1="40" x2="45" y1="362" y2="362"></line><line x1="40" x2="45" y1="342" y2="342"></line><line x1="40" x2="45" y1="322" y2="322"></line><line x1="40" x2="45" y1="302" y2="302"></line><line x1="40" x2="45" y1="282" y2="282"></line><line x1="40" x2="45" y1="262" y2="262"></line><line x1="40" x2="45" y1="242" y2="242"></line><line x1="40" x2="45" y1="222" y2="222"></line><line x1="40" x2="45" y1="202" y2="202"></line><line x1="40" x2="45" y1="182" y2="182"></line><line x1="40" x2="45" y1="162" y2="162"></line><line x1="40" x2="45" y1="142" y2="142"></line><line x1="40" x2="45" y1="122" y2="122"></line><line x1="40" x2="45" y1="102" y2="102"></line><line x1="40" x2="45" y1="82" y2="82"></line><line x1="40" x2="45" y1="62" y2="62"></line><line x1="40" x2="45" y1="42" y2="42"></line><line x1="40" x2="45" y1="22" y2="22"></line><line x1="40" x2="45" y1="2" y2="2"></line></g>
+			<g word-spacing="0" letter-spacing="0" text-anchor="end" stroke="none" fill="red" font-size="15.000000px"><text x="35.000000" y="702.500000" dy="3px">0°</text><text x="35.000000" y="682.500000" dy="3px">1°</text><text x="35.000000" y="662.500000" dy="3px">2°</text><text x="35.000000" y="642.500000" dy="3px">3°</text><text x="35.000000" y="622.500000" dy="3px">4°</text><text x="35.000000" y="602.500000" dy="3px">5°</text><text x="35.000000" y="582.500000" dy="3px">6°</text><text x="35.000000" y="562.500000" dy="3px">7°</text><text x="35.000000" y="542.500000" dy="3px">8°</text><text x="35.000000" y="522.500000" dy="3px">9°</text><text x="35.000000" y="502.500000" dy="3px">10°</text><text x="35.000000" y="482.500000" dy="3px">11°</text><text x="35.000000" y="462.500000" dy="3px">12°</text><text x="35.000000" y="442.500000" dy="3px">13°</text><text x="35.000000" y="422.500000" dy="3px">14°</text><text x="35.000000" y="402.500000" dy="3px">15°</text><text x="35.000000" y="382.500000" dy="3px">16°</text><text x="35.000000" y="362.500000" dy="3px">17°</text><text x="35.000000" y="342.500000" dy="3px">18°</text><text x="35.000000" y="322.500000" dy="3px">19°</text><text x="35.000000" y="302.500000" dy="3px">20°</text><text x="35.000000" y="282.500000" dy="3px">21°</text><text x="35.000000" y="262.500000" dy="3px">22°</text><text x="35.000000" y="242.500000" dy="3px">23°</text><text x="35.000000" y="222.500000" dy="3px">24°</text><text x="35.000000" y="202.500000" dy="3px">25°</text><text x="35.000000" y="182.500000" dy="3px">26°</text><text x="35.000000" y="162.500000" dy="3px">27°</text><text x="35.000000" y="142.500000" dy="3px">28°</text><text x="35.000000" y="122.500000" dy="3px">29°</text><text x="35.000000" y="102.500000" dy="3px">30°</text><text x="35.000000" y="82.500000" dy="3px">31°</text><text x="35.000000" y="62.500000" dy="3px">32°</text><text x="35.000000" y="42.500000" dy="3px">33°</text><text x="35.000000" y="22.500000" dy="3px">34°</text><text x="35.000000" y="2.500000" dy="3px">35°</text></g>
+		</g>
+		<g id="air-temp-axel" clip-path="url(#clip-path-air-temp)">
+			<g stroke="#000" stroke-width="2"><line x1="470" x2="475" y1="702" y2="702"></line><line x1="470" x2="475" y1="682" y2="682"></line><line x1="470" x2="475" y1="662" y2="662"></line><line x1="470" x2="475" y1="642" y2="642"></line><line x1="470" x2="475" y1="622" y2="622"></line><line x1="470" x2="475" y1="602" y2="602"></line><line x1="470" x2="475" y1="582" y2="582"></line><line x1="470" x2="475" y1="562" y2="562"></line><line x1="470" x2="475" y1="542" y2="542"></line><line x1="470" x2="475" y1="522" y2="522"></line><line x1="470" x2="475" y1="502" y2="502"></line><line x1="470" x2="475" y1="482" y2="482"></line><line x1="470" x2="475" y1="462" y2="462"></line><line x1="470" x2="475" y1="442" y2="442"></line><line x1="470" x2="475" y1="422" y2="422"></line><line x1="470" x2="475" y1="402" y2="402"></line><line x1="470" x2="475" y1="382" y2="382"></line><line x1="470" x2="475" y1="362" y2="362"></line><line x1="470" x2="475" y1="342" y2="342"></line><line x1="470" x2="475" y1="322" y2="322"></line><line x1="470" x2="475" y1="302" y2="302"></line><line x1="470" x2="475" y1="282" y2="282"></line><line x1="470" x2="475" y1="262" y2="262"></line><line x1="470" x2="475" y1="242" y2="242"></line><line x1="470" x2="475" y1="222" y2="222"></line><line x1="470" x2="475" y1="202" y2="202"></line><line x1="470" x2="475" y1="182" y2="182"></line><line x1="470" x2="475" y1="162" y2="162"></line><line x1="470" x2="475" y1="142" y2="142"></line><line x1="470" x2="475" y1="122" y2="122"></line><line x1="470" x2="475" y1="102" y2="102"></line><line x1="470" x2="475" y1="82" y2="82"></line><line x1="470" x2="475" y1="62" y2="62"></line><line x1="470" x2="475" y1="42" y2="42"></line><line x1="470" x2="475" y1="22" y2="22"></line><line x1="470" x2="475" y1="2" y2="2"></line></g>
+			<g word-spacing="0" letter-spacing="0" text-anchor="start" stroke="none" fill="blue" font-size="15.000000px"><text x="480.000000" y="702.500000" dy="3px">0°</text><text x="480.000000" y="682.500000" dy="3px">1°</text><text x="480.000000" y="662.500000" dy="3px">2°</text><text x="480.000000" y="642.500000" dy="3px">3°</text><text x="480.000000" y="622.500000" dy="3px">4°</text><text x="480.000000" y="602.500000" dy="3px">5°</text><text x="480.000000" y="582.500000" dy="3px">6°</text><text x="480.000000" y="562.500000" dy="3px">7°</text><text x="480.000000" y="542.500000" dy="3px">8°</text><text x="480.000000" y="522.500000" dy="3px">9°</text><text x="480.000000" y="502.500000" dy="3px">10°</text><text x="480.000000" y="482.500000" dy="3px">11°</text><text x="480.000000" y="462.500000" dy="3px">12°</text><text x="480.000000" y="442.500000" dy="3px">13°</text><text x="480.000000" y="422.500000" dy="3px">14°</text><text x="480.000000" y="402.500000" dy="3px">15°</text><text x="480.000000" y="382.500000" dy="3px">16°</text><text x="480.000000" y="362.500000" dy="3px">17°</text><text x="480.000000" y="342.500000" dy="3px">18°</text><text x="480.000000" y="322.500000" dy="3px">19°</text><text x="480.000000" y="302.500000" dy="3px">20°</text><text x="480.000000" y="282.500000" dy="3px">21°</text><text x="480.000000" y="262.500000" dy="3px">22°</text><text x="480.000000" y="242.500000" dy="3px">23°</text><text x="480.000000" y="222.500000" dy="3px">24°</text><text x="480.000000" y="202.500000" dy="3px">25°</text><text x="480.000000" y="182.500000" dy="3px">26°</text><text x="480.000000" y="162.500000" dy="3px">27°</text><text x="480.000000" y="142.500000" dy="3px">28°</text><text x="480.000000" y="122.500000" dy="3px">29°</text><text x="480.000000" y="102.500000" dy="3px">30°</text><text x="480.000000" y="82.500000" dy="3px">31°</text><text x="480.000000" y="62.500000" dy="3px">32°</text><text x="480.000000" y="42.500000" dy="3px">33°</text><text x="480.000000" y="22.500000" dy="3px">34°</text><text x="480.000000" y="2.500000" dy="3px">35°</text></g>
+		</g>
+		<g id="x-axel" clip-path="url(#clip-path-x)">
+			<g stroke="#000" stroke-width="2"><line x1="75" x2="75" y1="715" y2="720"></line><line x1="135" x2="135" y1="715" y2="720"></line><line x1="195" x2="195" y1="715" y2="720"></line><line x1="255" x2="255" y1="715" y2="720"></line><line x1="315" x2="315" y1="715" y2="720"></line><line x1="375" x2="375" y1="715" y2="720"></line><line x1="435" x2="435" y1="715" y2="720"></line><line x1="495" x2="495" y1="715" y2="720"></line><line x1="555" x2="555" y1="715" y2="720"></line><line x1="615" x2="615" y1="715" y2="720"></line><line x1="675" x2="675" y1="715" y2="720"></line><line x1="735" x2="735" y1="715" y2="720"></line><line x1="795" x2="795" y1="715" y2="720"></line><line x1="855" x2="855" y1="715" y2="720"></line><line x1="915" x2="915" y1="715" y2="720"></line><line x1="975" x2="975" y1="715" y2="720"></line><line x1="1035" x2="1035" y1="715" y2="720"></line><line x1="1095" x2="1095" y1="715" y2="720"></line><line x1="1155" x2="1155" y1="715" y2="720"></line><line x1="1215" x2="1215" y1="715" y2="720"></line><line x1="1275" x2="1275" y1="715" y2="720"></line><line x1="1335" x2="1335" y1="715" y2="720"></line><line x1="1395" x2="1395" y1="715" y2="720"></line><line x1="1455" x2="1455" y1="715" y2="720"></line><line x1="1515" x2="1515" y1="715" y2="720"></line><line x1="1575" x2="1575" y1="715" y2="720"></line><line x1="1635" x2="1635" y1="715" y2="720"></line><line x1="1695" x2="1695" y1="715" y2="720"></line><line x1="1755" x2="1755" y1="715" y2="720"></line><line x1="1815" x2="1815" y1="715" y2="720"></line></g>
+			<g word-spacing="0" letter-spacing="0" text-anchor="middle" stroke="none" fill="#000" font-size="15.000000px"><text x="75.000000" y="725.000000" dy="15">01:00</text><text x="135.000000" y="725.000000" dy="15">02:00</text><text x="195.000000" y="725.000000" dy="15">03:00</text><text x="255.000000" y="725.000000" dy="15">04:00</text><text x="315.000000" y="725.000000" dy="15">05:00</text><text x="375.000000" y="725.000000" dy="15">06:00</text><text x="435.000000" y="725.000000" dy="15">07:00</text><text x="495.000000" y="725.000000" dy="15">08:00</text><text x="555.000000" y="725.000000" dy="15">09:00</text><text x="615.000000" y="725.000000" dy="15">10:00</text><text x="675.000000" y="725.000000" dy="15">11:00</text><text x="735.000000" y="725.000000" dy="15">12:00</text><text x="795.000000" y="725.000000" dy="15">13:00</text><text x="855.000000" y="725.000000" dy="15">14:00</text><text x="915.000000" y="725.000000" dy="15">15:00</text><text x="975.000000" y="725.000000" dy="15">16:00</text><text x="1035.000000" y="725.000000" dy="15">17:00</text><text x="1095.000000" y="725.000000" dy="15">18:00</text><text x="1155.000000" y="725.000000" dy="15">19:00</text><text x="1215.000000" y="725.000000" dy="15">20:00</text><text x="1275.000000" y="725.000000" dy="15">21:00</text><text x="1335.000000" y="725.000000" dy="15">22:00</text><text x="1395.000000" y="725.000000" dy="15">23:00</text><text x="1455.000000" y="725.000000" dy="15">24:00</text><text x="1515.000000" y="725.000000" dy="15">01:00</text><text x="1575.000000" y="725.000000" dy="15">02:00</text><text x="1635.000000" y="725.000000" dy="15">03:00</text><text x="1695.000000" y="725.000000" dy="15">04:00</text><text x="1755.000000" y="725.000000" dy="15">05:00</text><text x="1815.000000" y="725.000000" dy="15">06:00</text></g>
+		</g>
+		
+		<polyline id="water-graf" points="" fill="none" stroke="red" stroke-width="1" marker-start="url(#water-dot)" marker-mid="url(#water-dot)" marker-end="url(#water-dot)" clip-path="url(#clip-path-water-graf)"></polyline>
+		<polyline id="air-graf" points="" fill="none" stroke="blue" stroke-width="1" marker-start="url(#air-dot)" marker-mid="url(#air-dot)" marker-end="url(#air-dot)" clip-path="url(#clip-path-air-graf)"></polyline>
+
+		<g id="plate-icons">
+			<use xlink:href="#plate-wave" stroke="red" transform="translate(17.000000,575.000000),scale(0.100000)"></use>
+			<use xlink:href="#plate-cloud" stroke="blue" transform="translate(475.000000,575.000000),scale(0.100000)"></use>
+		</g>
+	</svg>	</div>
+	<!--<button class="show-list temp-list-icon" type="button"></button>-->
+	<div class="buoys-measurment-list">
+		<table>
+			<thead>
+				<tr>
+					<th>Plats</th>
+					<th>Vattnet</th>
+					<th>Luften</th>
+				</tr>
+			</thead>
+			<tbody>
+									<tr>
+						<td>Burgsvik</td>
+						<td>19,8°</td>
+						<td>18,8°</td>
+					</tr>
+			</tbody>
+							<tbody><tr>
+						<td>Ekeviken</td>
+						<td>16,3°</td>
+						<td>17,7°</td>
+					</tr>
+			</tbody>
+							<tbody><tr>
+						<td>Herta</td>
+						<td>-°</td>
+						<td>-°</td>
+					</tr>
+			</tbody>
+							<tbody><tr>
+						<td>Holmhällar</td>
+						<td>11,8°</td>
+						<td>17,2°</td>
+					</tr>
+			</tbody>
+							<tbody><tr>
+						<td>Ihreviken</td>
+						<td>-°</td>
+						<td>-°</td>
+					</tr>
+			</tbody>
+							<tbody><tr>
+						<td>Kallis</td>
+						<td>17,6°</td>
+						<td>17,0°</td>
+					</tr>
+			</tbody>
+							<tbody><tr>
+						<td>Ljugarn</td>
+						<td>15,6°</td>
+						<td>18,4°</td>
+					</tr>
+			</tbody>
+							<tbody><tr>
+						<td>Nisseviken</td>
+						<td>21,4°</td>
+						<td>19,3°</td>
+					</tr>
+			</tbody>
+							<tbody><tr>
+						<td>Sandviken</td>
+						<td>16,6°</td>
+						<td>19,0°</td>
+					</tr>
+			</tbody>
+							<tbody><tr>
+						<td>Slite</td>
+						<td>15,0°</td>
+						<td>19,8°</td>
+					</tr>
+			</tbody>
+							<tbody><tr>
+						<td>Sudersand</td>
+						<td>14,9°</td>
+						<td>19,2°</td>
+					</tr>
+			</tbody>
+							<tbody><tr>
+						<td>Tofta</td>
+						<td>-°</td>
+						<td>-°</td>
+					</tr>
+			</tbody>
+							<tbody><tr>
+						<td>Åminne</td>
+						<td>14,2°</td>
+						<td>19,3°</td>
+					</tr>
+			</tbody>
+				</table>
+	</div>
+</div>
+</body></html>
